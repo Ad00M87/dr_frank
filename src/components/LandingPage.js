@@ -144,6 +144,7 @@ const styles = {
     backgroundSize: 'cover',
     height: '100%',
     width: '100%',
+    borderRadius: '0'
   },
   whiteText: {
     color: 'white',

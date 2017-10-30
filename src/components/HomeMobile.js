@@ -141,7 +141,6 @@ const styles = {
   graveyard: {
     background: `url(${graveyard}) no-repeat center`,
     backgroundSize: 'cover',
-    backgroundAttachment: 'fixed',
     height: '500px',
   },
   bodyFacts: {
@@ -155,7 +154,6 @@ const styles = {
   castle: {
     background: `url(${castle}) no-repeat center`,
     backgroundSize: 'cover',
-    backgroundAttachment: 'fixed',
     height: '500px',
   },
   mapText: {
@@ -171,7 +169,6 @@ const styles = {
   europe: {
     background: `url(${europe}) no-repeat center`,
     backgroundSize: 'cover',
-    backgroundAttachment: 'fixed',
     height: '700px',
   },
   bottomClear: {

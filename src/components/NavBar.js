@@ -103,6 +103,7 @@ const styles = {
     backgroundColor: '#000',
     height: '20px',
     margin: '0',
+    borderRadius: '0',
   },
 }
 
