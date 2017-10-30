@@ -22,13 +22,26 @@ class LandingPage extends React.Component {
   };
 
   heartUp = () => {
-    document.getElementById('heart').classList.add('beating-heart');
+    const { width } = this.state;
+    const isMobile = width <= 1250;
+
+    if (isMobile) {
+      document.getElementById('heart').classList.add('beating-heart-mobile');
+    } else {
+      document.getElementById('heart').classList.add('beating-heart');
+    }
   }
 
   heartDown = () => {
+    const { width } = this.state;
+    const isMobile = width <= 1250;
     let { beatCount } = this.state;
     console.log(beatCount)
-    document.getElementById('heart').classList.remove('beating-heart');
+    if (isMobile) {
+      document.getElementById('heart').classList.remove('beating-heart-mobile');
+    } else {
+      document.getElementById('heart').classList.remove('beating-heart');
+    }
     setTimeout( () => {
       this.setState({ beatCount: beatCount + 1 });
     }, 200)
@@ -96,10 +109,10 @@ class LandingPage extends React.Component {
             <Image
               src={Heart}
               id='heart'
-              className='resting-heart'
+              className='resting-heart-mobile'
               centered
               verticalAlign="middle"
-              style={styles.heartStyle}
+              style={styles.heartStyleMobile}
               onClick={this.beatingHeart}
             />
           </Segment>
@@ -152,6 +165,9 @@ const styles = {
   heartStyle: {
     margin: '10% 0',
     cursor: 'pointer',
+  },
+  heartStyleMobile: {
+    margin: '20% 10% 30% 10%',
   },
 }
 

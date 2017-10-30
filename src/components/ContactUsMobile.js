@@ -89,6 +89,7 @@ const styles = {
   pageFormat: {
     backgroundColor: '#000',
     color: '#fff',
+    padding: '0 5px',
   },
   whiteText: {
     color: '#fff'
