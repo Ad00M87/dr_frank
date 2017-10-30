@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.collapsed {
+  height: 0px;
+  opacity: 0.0;
+  -webkit-transition: height 0.5s, opacity 0.5s, -webkit-transform 2s;
+  transition: height 0.5s, opacity 0.5s, transform 2s;
+}
+
+.show-phone {
+  height: 1250px;
+  opacity: 1;
+}
+
+.show-lungs {
+  height: 1050px;
+  opacity: 1;
+}
+
+.show-intestines {
+  height: 1300px;
+  opacity: 1;
+}
+
+.show {
+  height: 600px;
+  opacity: 1;
+}
+
+.resting-heart {
+  height: 444px;
+  width: 300px;
+  margin: 10% 0;
+  -webkit-transition: height 0.25s, width 0.25s, -webkit-transform 0.25s;
+  transition: height 0.25s, width 0.25s, transform 0.25s;
+}
+
+.resting-heart-mobile {
+  height: 300px;
+  width: 250px;
+  margin: 10% 0;
+  -webkit-transition: height 0.25s, width 0.25s, -webkit-transform 0.25s;
+  transition: height 0.25s, width 0.25s, transform 0.25s;
+}
+
+.beating-heart {
+  height: 500px;
+  width: 350px;
+}
+
+.handwritting {
+  font-family: 'Jim Nightshade', cursive;
+}
