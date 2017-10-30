@@ -19,7 +19,7 @@ class Home extends React.Component {
 
   render() {
     const { width } = this.state;
-    const isMobile = width <= 1400;
+    const isMobile = width <= 1300;
 
     if (isMobile) {
       return(
